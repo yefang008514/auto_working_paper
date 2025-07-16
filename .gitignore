@@ -1,8 +1,8 @@
 #忽略build
 build/
 
-#或略db
-db/
+#忽略db
+# db/
 
 #忽略dist
 dist/
