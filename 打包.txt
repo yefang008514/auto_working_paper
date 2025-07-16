@@ -12,7 +12,6 @@ conda activate py39_new
 pip install -r requirements.txt
 
 
-pip install lxml
 pip install pandas==2.2.2
 pip install lxml
 pip install streamlit
