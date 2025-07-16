@@ -1,5 +1,5 @@
 import pandas as pd
-import xlwings as xw
+# import xlwings as xw
 
 
 #外币缩写字典
@@ -75,7 +75,6 @@ def get_excahnge_rate_by_date(date):
 if __name__ == '__main__':
 
     df = get_excahnge_rate_by_date('2024-12-31')
-    xw.view(df)
 
     # start_date = '2024-01-01'  # 起始日期
     # end_date = '2024-01-15'    # 结束日期

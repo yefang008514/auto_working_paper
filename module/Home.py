@@ -3,7 +3,6 @@ import os,sys
 sys.path.append(os.getcwd())
 
 import pathlib 
-import xlwings as xw
 import pandas as pd 
 
 def main():
