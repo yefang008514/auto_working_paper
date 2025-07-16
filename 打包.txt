@@ -1,0 +1,42 @@
+Remove-Item -Recurse -Force build
+Remove-Item -Recurse -Force dist
+
+# 打包命令
+pyinstaller run_app.spec --clean
+
+# 虚拟环境
+conda create --name py39_new python=3.9
+conda activate py39_new
+
+# 安装依赖
+pip install -r requirements.txt
+
+
+pip install lxml
+pip install pandas==2.2.2
+pip install lxml
+pip install streamlit
+pip install xlwings
+pip install openpyxl
+pip install duckdb 
+pip install python-calamine
+pip install pyinstaller
+
+conda install pandas==2.2.2
+conda install lxml
+conda install streamlit
+conda install xlwings
+conda install openpyxl
+conda install duckdb 
+conda install python-calamine
+conda install pyinstaller
+
+#草稿
+pip freeze > requirements.txt
+
+conda install polars
+conda install fastexcel
+
+
+conda uninstall polars
+conda uninstall fastexcel
